@@ -26,10 +26,15 @@
                 <img src="img/mash.jpg" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
+                <h2 class="card-title name">Mashrafee</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div class="card-actions justify-end">
-                  <button class="btn btn-primary mx-auto">Buy Now</button>
+                  <button
+                    class="btn btn-primary mx-auto select-btn"
+                    onclick="addToList(this)"
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </div>
             </div>
@@ -42,10 +47,15 @@
                 <img src="img/mash.jpg" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
+                <h2 class="card-title name">Shakib</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div class="card-actions justify-end">
-                  <button class="btn btn-primary">Buy Now</button>
+                  <button
+                    class="btn btn-primary mx-auto select-btn"
+                    onclick="addToList(this)"
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </div>
             </div>
@@ -58,10 +68,15 @@
                 <img src="img/mash.jpg" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
+                <h2 class="card-title name">Messi</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div class="card-actions justify-end">
-                  <button class="btn btn-primary">Buy Now</button>
+                  <button
+                    class="btn btn-primary mx-auto select-btn"
+                    onclick="addToList(this)"
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </div>
             </div>
@@ -74,52 +89,35 @@
                 <img src="img/mash.jpg" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
+                <h2 class="card-title name">Mashrafee</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div class="card-actions justify-end">
-                  <button class="btn btn-primary">Buy Now</button>
+                  <button
+                    class="btn btn-primary mx-auto select-btn"
+                    onclick="addToList(this)"
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </div>
             </div>
           </div>
+
           <!-- card 4 ends -->
           <!-- card 5 starts -->
-          <div>
-            <div class="card card-compact w-full bg-base-100 shadow-xl">
-              <figure>
-                <img src="img/mash.jpg" alt="Shoes" />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
+
           <!-- card 5 ends -->
           <!-- card 6 starts -->
-          <div>
-            <div class="card card-compact w-full bg-base-100 shadow-xl">
-              <figure>
-                <img src="img/mash.jpg" alt="Shoes" />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
+
           <!-- card 6 ends -->
         </div>
         <!-- Selected Players -->
         <div>
           <div>
             <h1 class="text-6xl">Selected Players</h1>
+
+            <div id="Players-name"></div>
+
             <div class="overflow-x-auto">
               <div class="overflow-x-auto">
                 <table class="table w-full">
@@ -130,17 +128,20 @@
                       <th>Player</th>
                     </tr>
                   </thead>
-                  <tbody></tbody>
+                  <tbody id="table-body"></tbody>
                 </table>
               </div>
             </div>
           </div>
           <!-- budget -->
           <div>
-            <h2>budget</h2>
+            <h2 class="bg-pink-600">budget</h2>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- app.js -->
+    <script src="app.js"></script>
   </body>
 </html>
