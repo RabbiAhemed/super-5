@@ -51,3 +51,18 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
 
   totalPlayerExpensesText.innerText = playersCost;
 });
+
+/* calculate total Expenses */
+document.getElementById("total-btn").addEventListener("click", function () {
+  const totalPlayerExpensesText =
+    document.getElementById("player-expenses").innerText;
+  const totalPlayerExpensesFloat = parseFloat(totalPlayerExpensesText);
+  const managerCost = getInput("manager-cost-input");
+  const coachCost = getInput("coach-cost-input");
+  const totalExpenses = parseFloat(
+    totalPlayerExpensesFloat + managerCost + coachCost
+  );
+  const totalCostText = document.getElementById("total-cost");
+  totalCostText.innerText = totalExpenses;
+  console.log(totalCostText);
+});
