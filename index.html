@@ -134,8 +134,58 @@
             </div>
           </div>
           <!-- budget -->
-          <div>
-            <h2 class="bg-pink-600">budget</h2>
+          <div class="my-10">
+            <h2 class="bg-pink-600 mb-12">budget</h2>
+            <!-- per player cost input field -->
+            <div class="mt-10">
+              <label for="quantity">Per Player</label>
+              <input
+                type="number"
+                id="per-player"
+                name="price"
+                style="border: 2px solid black"
+              />
+            </div>
+            <!-- calculate button -->
+            <div class="my-6">
+              <button class="btn btn-primary mx-auto" id="calculate-btn">
+                Calculate
+              </button>
+            </div>
+            <!-- player expenses -->
+            <p class="mb-12">
+              Player Expenses <span id="player-expenses"></span>
+            </p>
+
+            <!-- manager cost input field -->
+            <div class="mt-10">
+              <label for="quantity">Manager</label>
+              <input
+                type="number"
+                id="manager-cost"
+                name="price"
+                style="border: 2px solid black"
+              />
+              </div>
+              <!-- coach cost input field -->
+              <div class="mt-8">
+                <label for="quantity">Coach</label>
+                <input
+                  type="number"
+                  id="coach-cost"
+                  name="price"
+                  style="border: 2px solid black"
+                />
+              </div>
+              <!-- calculate total button -->
+              <div class="my-6">
+                <button class="btn btn-primary mx-auto" id="total-btn">
+                  Calculate Total
+                </button>
+              </div>
+              <!-- Total expenses -->
+              <p class="mb-6">Total: <span></span></p>
+            </div>
           </div>
         </div>
       </div>
