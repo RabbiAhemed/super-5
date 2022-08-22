@@ -9,7 +9,7 @@ function showPlayers() {
   for (let i = 0; i < playersList.length; i++) {
     const ol = document.createElement("ol");
     ol.innerHTML = `<ol>
-        <li>${playersList[i].pName}</li>
+        <li>${i + 1}. ${playersList[i].pName}</li>
       </ol>`;
     playersContainer.appendChild(ol);
   }

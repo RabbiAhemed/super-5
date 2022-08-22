@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>select best five</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <!--  -->
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyui cdn -->
@@ -15,8 +21,23 @@
     />
   </head>
   <body>
-    <section class="w-9/12 mx-auto mt-12">
-      <div class="grid grid-cols-2 gap-4">
+    <header >
+        <div class="pt-24 text-center">
+            
+        <h1 class=" text-9xl font-black text-indigo-50" id="title">SUPER 5</h1>
+        <h1 class="text-4xl font-medium pb-4">Pick Your Super 5 Today!!! </h1>
+        <p class="w-5/12 mx-auto text-base">Experience the best of fantasy Game with Super5.  Enjoy the thrill of soccer by creating super five team of superstar players of leagues from all across the globe. Crammed with explosive attributes, super5 fantasy football lets you create fantasy teams.</p>
+        </div>
+        <div>
+            <img src="img/main logo.jpg" alt="" id="logo" class="" >
+        </div>
+        <div>
+            <img src="img/five.png" alt="" id="five-players" class="" >
+        </div>
+       
+    </header>
+    <section class="w-11/12 mx-auto mt-12">
+      <div class="grid grid-cols-2 gap-16">
         <!-- All Players -->
         <div class="grid grid-cols-3 gap-4 pb-12">
           <!-- card 1 starts -->
@@ -147,11 +168,11 @@
           <!-- card 6 ends -->
         </div>
         <!-- Selected Players -->
-        <div>
-          <div>
-            <h1 class="text-6xl">Selected Players</h1>
+        <div class="w-6/12">
+          <div class="bg-rose-600">
+            <h1 class="text-2xl mx-auto text-center py-4 ">Selected Players</h1>
 
-            <div id="players-container" class="bg-lime-400 mt-10"></div>
+            <div id="players-container" class=" mt-6 text-white text-center"></div>
 
             
           </div>
