@@ -26,14 +26,14 @@
                 <img src="img/mash.jpg" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title name">Mashrafee</h2>
+                <h2 class="card-title pName">Mashrafee</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div class="card-actions justify-end">
                   <button
                     class="btn btn-primary mx-auto select-btn"
-                    onclick="addToList(this)"
+                    onclick="addToList(this),this.disabled=true;"
                   >
-                    Buy Now
+                    Select
                   </button>
                 </div>
               </div>
@@ -47,14 +47,14 @@
                 <img src="img/mash.jpg" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title name">Shakib</h2>
+                <h2 class="card-title pName">Shakib</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div class="card-actions justify-end">
                   <button
                     class="btn btn-primary mx-auto select-btn"
-                    onclick="addToList(this)"
+                    onclick="addToList(this),this.disabled=true;"
                   >
-                    Buy Now
+                    Select
                   </button>
                 </div>
               </div>
@@ -68,14 +68,14 @@
                 <img src="img/mash.jpg" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title name">Messi</h2>
+                <h2 class="card-title pName">Tamim</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div class="card-actions justify-end">
                   <button
                     class="btn btn-primary mx-auto select-btn"
-                    onclick="addToList(this)"
+                    onclick="addToList(this),this.disabled=true;"
                   >
-                    Buy Now
+                    Select
                   </button>
                 </div>
               </div>
@@ -89,26 +89,61 @@
                 <img src="img/mash.jpg" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title name">Mashrafee</h2>
+                <h2 class="card-title pName">Mushi</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div class="card-actions justify-end">
                   <button
                     class="btn btn-primary mx-auto select-btn"
-                    onclick="addToList(this)"
+                    onclick="addToList(this),this.disabled=true;"
                   >
-                    Buy Now
+                    Select
                   </button>
                 </div>
               </div>
             </div>
           </div>
-
           <!-- card 4 ends -->
           <!-- card 5 starts -->
-
+          <div>
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img src="img/mash.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title pName">Mushi</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button
+                    class="btn btn-primary mx-auto select-btn"
+                    onclick="addToList(this),this.disabled=true;"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- card 5 ends -->
           <!-- card 6 starts -->
-
+          <div>
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img src="img/mash.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title pName">Mushi</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button
+                    class="btn btn-primary mx-auto select-btn"
+                    onclick="addToList(this),this.disabled=true;"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- card 6 ends -->
         </div>
         <!-- Selected Players -->
@@ -116,35 +151,22 @@
           <div>
             <h1 class="text-6xl">Selected Players</h1>
 
-            <div id="Players-name"></div>
+            <div id="players-container" class="bg-lime-400 mt-10"></div>
 
-            <div class="overflow-x-auto">
-              <div class="overflow-x-auto">
-                <table class="table w-full">
-                  <!-- head -->
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>Player</th>
-                    </tr>
-                  </thead>
-                  <tbody id="table-body"></tbody>
-                </table>
-              </div>
-            </div>
+            
           </div>
-          <!-- budget -->
-          <div class="my-10">
+          <!-- budget  section-->
+          <div class="my-10 bg-blue-400">
             <h2 class="bg-pink-600 mb-12">budget</h2>
             <!-- per player cost input field -->
             <div class="mt-10">
               <label for="quantity">Per Player</label>
               <input
-                type="number"
-                id="per-player"
-                name="price"
-                style="border: 2px solid black"
-              />
+                  type="number"
+                  id="per-player-input"
+                  name="price"
+                  style="border: 2px solid black"
+                />
             </div>
             <!-- calculate button -->
             <div class="my-6">
@@ -162,7 +184,7 @@
               <label for="quantity">Manager</label>
               <input
                 type="number"
-                id="manager-cost"
+                id="manager-cost-input"
                 name="price"
                 style="border: 2px solid black"
               />
@@ -172,7 +194,7 @@
                 <label for="quantity">Coach</label>
                 <input
                   type="number"
-                  id="coach-cost"
+                  id="coach-cost-input"
                   name="price"
                   style="border: 2px solid black"
                 />
@@ -184,7 +206,7 @@
                 </button>
               </div>
               <!-- Total expenses -->
-              <p class="mb-6">Total: <span></span></p>
+              <p class="mb-6">Total: <span id="total-cost"></span></p>
             </div>
           </div>
         </div>

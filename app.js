@@ -1,61 +1,53 @@
 const playersList = [];
 
-function showList(playersArray) {
-  console.log(playersArray);
-  const orderedList = document.getElementById("Players-name");
-  orderedList.innerHtml = "";
+function showPlayers() {
+  const totalSelectedPlayers = playersList.length;
 
-  for (let i = 0; i < playersArray.length; i++) {
-    const name = playersArray[i];
+  const playersContainer = document.getElementById("players-container");
+  playersContainer.textContent = "";
+
+  for (let i = 0; i < playersList.length; i++) {
     const ol = document.createElement("ol");
     ol.innerHTML = `<ol>
-    <li>${name}</li>
-  </ol>`;
-    orderedList.appendChild(ol);
+        <li>${playersList[i].pName}</li>
+      </ol>`;
+    playersContainer.appendChild(ol);
   }
+  return totalSelectedPlayers;
 }
 
-function addToList(player) {
-  const playerName = player.parentNode.parentNode.children[0].innerText;
+function addToList(element) {
+  const pName = element.parentNode.parentNode.children[0].innerText;
+  const playersDetails = { pName: pName };
+  if (playersList.length > 4) {
+    alert("You can't add more than 5 players to the list");
+  } else {
+    playersList.push(playersDetails);
+    showPlayers();
+  }
 
-  playersList.push(playerName);
-
-  showList(playersList);
+  console.log(playersList.length);
 }
 
 /* BUDGET PART */
 
-// const NumberOfPlayers = playersList.length;
-const perPlayerInput = document.getElementById("per-player").value;
-const perPlayerCostFloat = parseFloat(perPlayerInput);
+// get input from user common function
+function getInput(inputId) {
+  const userInput = document.getElementById(inputId);
+  const amountString = userInput.value;
+  const amountValue = parseFloat(amountString);
+  userInput.value = "";
+  return amountValue;
+}
 
-const managerCostInput = document.getElementById("manager-cost").value;
-const managerCostFloat = parseFloat(managerCostInput);
-console.log(managerCostFloat);
-
-const coachCostInput = document.getElementById("coach-cost").value;
-const coachCostFloat = parseFloat(coachCostInput);
-
-// calculate button
+/* calculate player expenses */
 document.getElementById("calculate-btn").addEventListener("click", function () {
-  console.log(perPlayerCostFloat);
+  // get input from user
+  const perPlayerCost = getInput("per-player-input");
+
+  const totalPlayerExpensesText = document.getElementById("player-expenses");
+  const numberOfPlayers = showPlayers();
+  const playersCost = parseFloat(numberOfPlayers * perPlayerCost);
+
+  totalPlayerExpensesText.innerText = playersCost;
 });
-
-// calculate Total Expenses
-// document.getElementById("total-btn").addEventListener("click", function () {
-//   cons;
-//   function calculateCost(cost1, cost2, cost3) {
-//     finalCost = cost1 + cost2 + cost3;
-//     return finalCost;
-//     console.log(finalCost);
-//   }
-//   console.log(coachCostFloat);
-//   calculateCost(managerCostFloat, coachCostFloat);
-// });
-
-// // calculate function
-// function calculateCost(cost1, cost2, cost3) {
-//   finalCost = cost1 + cost2 + cost3;
-//   return finalCost;
-//   console.log(finalCost);
-// }
