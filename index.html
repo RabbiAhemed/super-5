@@ -26,6 +26,7 @@
     />
   </head>
   <body>
+    <!-- Header Starts -->
     <header >
         <div class="pt-24 text-center">
             
@@ -41,9 +42,10 @@
         </div>
        
     </header>
+    <!-- Header Ends -->
     <section class="pl-80 mx-auto mt-12 ">
       <div class="grid grid-cols-2 gap-16">
-        <!-- All Players -->
+        <!-- All Players / Left Side Starts -->
         <div class="grid grid-cols-3 gap-4 pb-12">
           <!-- card 1 starts -->
           <div>
@@ -52,8 +54,8 @@
                 <img src="img/players/neymar.png" alt="Shoes" class="" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title pName">Neymar</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 class="card-title playerName mx-auto">Neymar</h2>
+                <p class="text-sm font-bold mx-auto">Winger</p>
                 <div class="card-actions justify-end">
                   <button
                     class="btn btn-primary mx-auto select-btn btn-block"
@@ -73,8 +75,8 @@
                 <img src="img/players/ronaldo.jpg" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title pName">Ronaldo</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 class="card-title playerName mx-auto">Ronaldo</h2>
+                <p class="text-sm font-bold mx-auto">Forward</p>
                 <div class="card-actions justify-end">
                   <button
                     class="btn btn-primary mx-auto select-btn btn-block"
@@ -94,8 +96,8 @@
                 <img src="img/players/messi.png" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title pName">Messi</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 class="card-title playerName mx-auto">Lionel Messi</h2>
+                <p class="text-sm font-bold mx-auto">Forward</p>
                 <div class="card-actions justify-end">
                   <button
                     class="btn btn-primary mx-auto select-btn btn-block"
@@ -115,8 +117,8 @@
                 <img src="img/players/ramos.png" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title pName">Sergio Ramos</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 class="card-title playerName mx-auto">Sergio Ramos</h2>
+                <p class="text-sm font-bold mx-auto">Center-back</p>
                 <div class="card-actions justify-end">
                   <button
                     class="btn btn-primary mx-auto select-btn btn-block"
@@ -136,8 +138,8 @@
                 <img src="img/players/sanches.png" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title pName">Renata Sanches</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 class="card-title playerName mx-auto">Renato Sanches</h2>
+                <p class="text-sm font-bold mx-auto">Midfielder</p>
                 <div class="card-actions justify-end">
                   <button
                     class="btn btn-primary mx-auto select-btn btn-block"
@@ -157,8 +159,8 @@
                 <img src="img/players/mbappe.png" alt="Shoes" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title pName">Kylian Mbappe</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 class="card-title playerName mx-auto">Kylian Mbappe</h2>
+                <p class="text-sm font-bold mx-auto">Forward</p>
                 <div class="card-actions justify-end">
                   <button
                     class="btn btn-primary mx-auto select-btn btn-block"
@@ -171,18 +173,146 @@
             </div>
           </div>
           <!-- card 6 ends -->
+          <!-- card 7 starts -->
+          <div>
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img src="img/players/allison.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title playerName mx-auto">Alisson Becker</h2>
+                <p class="text-sm font-bold mx-auto">Goalkeeper</p>
+                <div class="card-actions justify-end">
+                  <button
+                    class="btn btn-primary mx-auto select-btn btn-block"
+                    onclick="addToList(this),this.disabled=true;"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 7 ends -->
+          <!-- card 8 starts -->
+          <div>
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img src="img/players/vini2.jpeg" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title playerName mx-auto">Vinicius Jr.</h2>
+                <p class="text-sm font-bold mx-auto">Forward</p>
+                <div class="card-actions justify-end">
+                  <button
+                    class="btn btn-primary mx-auto select-btn btn-block"
+                    onclick="addToList(this),this.disabled=true;"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 8 ends -->
+          <!-- card 9 starts -->
+          <div>
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img src="img/players/marcelo.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title playerName mx-auto">Marcelo</h2>
+                <p class="text-sm font-bold mx-auto">Left-back</p>
+                <div class="card-actions justify-end">
+                  <button
+                    class="btn btn-primary mx-auto select-btn btn-block"
+                    onclick="addToList(this),this.disabled=true;"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 9 ends -->
+          <!-- card 10 starts -->
+          <div>
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img src="img/players/gareth bale.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title playerName mx-auto">Gareth Bale</h2>
+                <p class="text-sm font-bold mx-auto">Winger</p>
+                <div class="card-actions justify-end">
+                  <button
+                    class="btn btn-primary mx-auto select-btn btn-block"
+                    onclick="addToList(this),this.disabled=true;"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 10 ends -->
+          <!-- card 11 starts -->
+          <div>
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img src="img/players/insigne.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title playerName mx-auto">Lorenzo Insigne</h2>
+                <p class="text-sm font-bold mx-auto">Winger</p>
+                <div class="card-actions justify-end">
+                  <button
+                    class="btn btn-primary mx-auto select-btn btn-block"
+                    onclick="addToList(this),this.disabled=true;"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 11 ends -->
+          <!-- card 12 starts -->
+          <div>
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img src="img/players/harry kane.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title playerName mx-auto">Harry Kane</h2>
+                <p class="text-sm font-bold mx-auto">Striker</p>
+                <div class="card-actions justify-end">
+                  <button
+                    class="btn btn-primary mx-auto select-btn btn-block"
+                    onclick="addToList(this),this.disabled=true;"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 12 ends -->
         </div>
-        <!-- Selected Players -->
+        <!-- All Players / Left Side Ends -->
+        <!-- Right Side Stars -->
         <div class="w-6/12">
+          <!-- Selected Players  Starts-->
           <div class="bg-rose-600 rounded-md pb-12">
             <h1 class="text-2xl text-white font-bold mx-auto text-center py-4 ">Selected Players</h1>
-            
-
+            <!-- Players Container -->
             <div id="players-container" class=" mt-6 text-white text-center"></div>
 
             
           </div>
-          <!-- budget  section-->
+          <!-- Selected Players Ends -->
+          <!-- Budget  Part Starts -->
           <div class="my-10 bg-cyan-500  rounded-md pb-12 text-center">
             <h2 class="text-2xl text-white font-bold mx-auto text-center py-4 ">budget</h2>
             <!-- per player cost input field -->
@@ -203,7 +333,7 @@
             </div>
             <!-- player expenses -->
             <p class="mb-12 text-sm text-white font-bold">
-              Player Expenses: <span id="player-expenses">$00</span>
+              Player Expenses: $<span id="player-expenses">00</span>
             </p>
 
             <!-- manager cost input field -->
@@ -234,16 +364,21 @@
                 </button>
               </div>
               <!-- Total expenses -->
-              <p class="mb-6 text-sm text-white font-bold">Total: <span id="total-cost">$00</span></p>
+              <p class="mb-6 text-sm text-white font-bold">Total: $<span id="total-cost">00</span></p>
             </div>
-          </div>
+          </div> 
+          <!-- Budget  Part Ends -->
         </div>
       </div>
     </section>
-    <div class="divider"></div> 
+    <!-- Horizontal Divider Starts -->
+    <div class="divider"></div>
+     <!--Horizontal Divider Ends  -->
+     <!-- Footer Starts -->
     <footer class="text-lg text-black font-bold mb-6 text-center">
       <p>Handcrafted by Rabbi_Ahemed</p>
     </footer>
+    <!-- Footer Ends -->
 
     <!-- app.js -->
     <script src="app.js"></script>

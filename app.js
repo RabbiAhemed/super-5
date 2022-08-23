@@ -9,7 +9,7 @@ function showPlayers() {
   for (let i = 0; i < playersList.length; i++) {
     const ol = document.createElement("ol");
     ol.innerHTML = `<ol>
-        <li>${i + 1}. ${playersList[i].pName}</li>
+        <li>${i + 1}. ${playersList[i].playerName}</li>
       </ol>`;
     playersContainer.appendChild(ol);
   }
@@ -17,8 +17,8 @@ function showPlayers() {
 }
 
 function addToList(element) {
-  const pName = element.parentNode.parentNode.children[0].innerText;
-  const playersDetails = { pName: pName };
+  const playerName = element.parentNode.parentNode.children[0].innerText;
+  const playersDetails = { playerName: playerName };
   if (playersList.length > 4) {
     alert("You can't add more than 5 players to the list");
   } else {

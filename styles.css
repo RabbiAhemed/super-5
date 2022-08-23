@@ -30,3 +30,6 @@ header{
 #tag-line{
     font-family: 'Kalam', cursive;
 }
+#players-container{
+    height: 120px;
+}
